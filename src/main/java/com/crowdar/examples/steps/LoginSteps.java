@@ -20,10 +20,6 @@ public class LoginSteps extends PageSteps {
         LoginService.isViewLoaded();
     }
 
-    @When("The user goes to the Sign Up page")
-    public void goToSignUp() {
-        MobileActionManager.click(LoginConstants.SIGN_UP_BUTTON_LOCATOR);
-    }
 
     @When("The user logs in the application with: (.*), (.*)")
     public void doLoginProcess(String email, String password) {
